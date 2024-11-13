@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        height: 200px;
+        width: 700px;
+        border: 2px solid goldenrod;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+</style>
+
+<body>
+    <div>
+        <canvas id="myCanvas" width="170" height="150" style="border:0px solid grey"></canvas>
+
+        <script >
+            const c = document.getElementById("myCanvas");
+            const ctx = c.getContext("2d");
+
+            ctx.beginPath();
+            ctx.rect(20, 20, 120, 100);
+            ctx.stroke();
+        </script>
+
+
+
+        <canvas id="Canvas" width="200" height="125" style="border:0px solid #000000;">
+            Sorry, your browser does not support canvas.
+        </canvas>
+
+        <script>
+            const canvas = document.getElementById("Canvas");
+            const ct = canvas.getContext("2d");
+
+            ct.beginPath();
+            ct.arc(95, 50, 40, 0, 2 * Math.PI);
+            ct.stroke();
+        </script>
+
+
+        <canvas id="team" width="200" height="130" style="border:0px solid black">
+            Sorry, your browser does not support canvas.
+        </canvas>
+
+        <script>
+            const def = document.getElementById("team");
+            const abc = def.getContext("2d");
+
+            abc.rect(10, 10, 180, 100);
+            abc.stroke();
+        </script>
+
+    </div>
+
+
+</body>
+
+</html>
